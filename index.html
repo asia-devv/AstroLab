@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AstroLab</title>
-
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -77,7 +80,42 @@
 
     </header>
 
-    <main id="content"></main>
+    <main id="content">
+        <section class="inicio">
+             <img src="./images/ícone_branco.png" alt="Logo AstroLab" class="astrolab">
+        </section>
+        <section class="conteudo" id="problema">
+            <h2>O Problema</h2>
+            <p> Em missões espaciais de longa duração, como bases na Lua ou em Marte, o delay de comunicação com a Terra pode chegar a 40 minutos de ida e volta, tornando o suporte técnico remoto inviável em situações de emergência. Quando uma peça crítica falha, o astronauta precisa agir sozinho — identificar o componente defeituoso, encontrar uma solução e fabricar a peça de reposição — sem poder carregar na nave um estoque completo de peças para todas as possíveis falhas. Mesmo com impressoras 3D já operando na ISS desde 2014, o processo ainda depende de engenheiros terrestres para definir o que imprimir, com qual material e com quais parâmetros, o que é insustentável em condições de latência extrema.</p>
+        </section>
+        <section class="conteudo" id="tecnologia">
+            <h2>Tecnologias</h2>
+            <p>O AstroLab é um sistema de software embarcado que combina processamento de linguagem natural, visão computacional e inteligência artificial para operar de forma completamente offline. O sistema integra reconhecimento de voz e texto para diagnóstico de problemas, análise de imagem para identificação de peças danificadas, um repositório local de designs certificados por agências espaciais (NASA, ESA, CNSA), e leitura automática de sensores ambientais da nave para ajuste de parâmetros de impressão 3D em tempo real.</p>
+        </section>
+        <section class="conteudo" id="objetivos">
+            <h2>Nosso Objetivo</h2>
+            <p>O principal objetivo do AstroLab é entregar autonomia total ao astronauta para fabricar peças de reposição sem depender de conexão com a Terra, conhecimento técnico especializado ou suporte remoto. O sistema busca automatizar todo o fluxo de fabricação — do diagnóstico à impressão —, garantindo que as peças produzidas sejam seguras, certificadas e adequadas às condições ambientais da nave no momento da fabricação.</p>
+        </section>
+        <section class="conteudo" id="publico">
+            <h2>O Público-Alvo</h2>
+            <p>O sistema é voltado primariamente para astronautas em missões de longa duração em órbita, base lunar ou em Marte, que precisam realizar reparos críticos sem acesso a suporte técnico em tempo real. Secundariamente, engenheiros de missão na Terra também são impactados, pois o AstroLab registra um histórico completo de rastreabilidade de todas as peças fabricadas, permitindo auditoria remota e aprimoramento de protocolos para missões futuras.</p>
+        </section>
+        <section class="conteudo" id="beneficios">
+            <h2>Benefícios</h2>
+            <p>O AstroLab elimina a dependência de conectividade em situações críticas, reduz o risco de falhas humanas ao automatizar a seleção de designs e configuração de parâmetros, e aumenta a segurança das missões ao restringir a fabricação apenas a designs certificados e materiais compatíveis. Além disso, o sistema reduz o desperdício de material ao verificar o estoque antes de qualquer impressão e garante rastreabilidade completa para auditoria e melhoria contínua.</p>
+
+        </section>
+        <section class="conteudo" id="dia_a_dia">
+            <h2>Aplicações no Dia a Dia dos agentes</h2>
+            <p>Na prática, quando uma peça falha a bordo, o astronauta simplesmente descreve o problema com suas próprias palavras ou fotografa a peça danificada. O AstroLab identifica automaticamente o design correspondente, verifica se há material disponível e compatível, ajusta os parâmetros da impressora de acordo com as condições ambientais da nave e solicita uma confirmação final antes de iniciar a fabricação — tudo isso sem consultar manuais, sem contatar a Terra e sem precisar de qualquer conhecimento técnico de impressão 3D.</p>
+
+        </section>
+        <section class="conteudo" id="aplicacao">
+            <h2>Aplicações na Terra</h2>
+            <p> o AstroLab tenha sido concebido para missões espaciais, sua proposta central — fabricação autônoma de peças em ambientes isolados sem depender de suporte externo — resolve um problema muito mais amplo aqui na Terra. Plataformas de exploração de petróleo offshore, por exemplo, operam a centenas de quilômetros da costa, onde o transporte de uma peça de reposição pode levar dias e uma falha de equipamento pode significar paralisação total da operação ou risco à segurança da tripulação. O mesmo se aplica a bases de pesquisa na Antártida, garimpos e minerações em regiões remotas, navios em alto mar e até hospitais de campanha em zonas de conflito ou catástrofe — todos ambientes onde um técnico especializado não está disponível e o tempo de resposta logístico é inaceitável. Nesses contextos, o AstroLab atuaria da mesma forma: o operador descreve ou fotografa a peça com defeito, o sistema identifica o design certificado correspondente, verifica os materiais disponíveis e executa a impressão de forma autônoma, eliminando a dependência de cadeia de suprimentos e suporte remoto.</p>
+        </section>
+
+    </main>
 
 </div>
 
