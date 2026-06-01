@@ -81,5 +81,16 @@ nav a:hover{
 }
 
 #content{
-    padding:24px;
+    /* padding:24px; */
+}
+
+.inicio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-image:url('../images/fundo-galaxia.jpg'); */
+}
+.astrolab {
+    width: 500px;
+
 }
