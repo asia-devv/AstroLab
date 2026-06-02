@@ -9,17 +9,18 @@ html{
 
 body{
     display:flex;
-    background:#050B1A;
+    background: var(--background-primary);
     color:white;
     /* font-family:Segoe UI; */
-    font-family: Play;
+    font-family: var(--text);
 }
 
 .sidebar{
     width:260px;
     height:100vh;
 
-    background:#081121;
+    background:#08112100;
+    /* background-image: url(../images/fundo-galaxia.jpg); */
     border-right:1px solid #263552;
 
     position:fixed;
@@ -74,11 +75,15 @@ nav a{
     text-decoration:none;
     padding:12px;
     border-radius:6px;
+    margin-bottom: 10px;
+
+    transition: all ease 0.5s;
 }
 
 nav a:hover{
     background:#18233B;
     color:white;
+    transform: scale(1.05);
 }
 
 .status{
@@ -136,12 +141,12 @@ nav a:hover{
 
     padding: 80px 10%; 
 
-    background:#0a1625;
+    background: var(--background-primary);
     border-bottom: #263552 0.01px solid;
 }
 
 .section h2{
-    font-size:56px;
+    font-size:var(--title-size);
     margin: 20px 0;
 }
 
@@ -156,7 +161,7 @@ nav a:hover{
 }
 
 .tag{
-    color:#4da3ff;
+    color:#ffa34d;
     font-size:12px;
     letter-spacing:3px;
 }
@@ -164,7 +169,7 @@ nav a:hover{
 .destaque{
     margin: 30px 0;
     padding: 20px;
-    border-left: 4px solid #4DA3FF;
+    border-left: 4px solid #c45f00;
     background:rgba(77,163,255,.1);
     max-width:800px;
 }
@@ -176,8 +181,8 @@ ul{
 .problema{
 
 }
-.tecnologia{
-    background:#051224;
+.tecnologia, .publico, .dia_a_dia{
+    background: var(--background-secondary);
 
 }
 
@@ -196,7 +201,7 @@ ul{
 }
 
 #esquema {
-    max-height: 400px;
+    max-height: 250px;
     /* width: 100%; */
     object-fit: contain;
 }
