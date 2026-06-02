@@ -11,7 +11,8 @@ body{
     display:flex;
     background:#050B1A;
     color:white;
-    font-family:Segoe UI;
+    /* font-family:Segoe UI; */
+    font-family: Play;
 }
 
 .sidebar{
@@ -136,6 +137,7 @@ nav a:hover{
     padding: 80px 10%; 
 
     background:#0a1625;
+    border-bottom: #263552 0.01px solid;
 }
 
 .section h2{
@@ -171,9 +173,12 @@ ul{
     font-size:18px;
     margin-bottom:20px;
 }
+.problema{
 
+}
 .tecnologia{
-    background:#071b35;
+    background:#051224;
+
 }
 
 .tech-grade{
@@ -188,4 +193,10 @@ ul{
     text-align:center;
     border:1px solid rgba(255,255,255,.08); 
     border-radius:15px;
+}
+
+#esquema {
+    max-height: 400px;
+    /* width: 100%; */
+    object-fit: contain;
 }
