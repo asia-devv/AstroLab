@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
+
 
 :root{
-    --background-primary: rgb(10, 22, 37);
+    --background-primary: #030e25;
     --background-secondary: #051224;
 
-    --text: 'Play';
+    --title: 'Play';
+    --text: 'Exo';
     --text-size: 18px;
 
     --title-size: 56px;
