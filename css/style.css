@@ -186,6 +186,23 @@ nav a:hover{
     color: rgb(240, 138, 70);
 }
 
+.desc-latencia{
+    position:relative;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    p{
+        border: none;
+        /* text-align: center; */
+        color: #9fb4cf;
+        font-size: 22px;
+                #branco {
+        color: white;
+        font-weight: bold;
+    }
+    }
+}
+
 .marte,
 .terra{
     width:160px;
@@ -247,7 +264,7 @@ nav a:hover{
 }
 
 #destaque_problema{
-        color: rgb(131, 131, 131);
+        color: rgb(255, 255, 255);
         background: none;
         
         #branco {
@@ -260,6 +277,37 @@ nav a:hover{
     padding:80px;
     display:flex;
     align-items:center;
+}
+
+.cards{
+    /* width: 1000px; */
+    display:flex;
+    justify-content: space-evenly;
+    margin: 80px;
+    gap: 50px;
+}
+.card {
+    width: 400px;
+    padding:20px;
+    border-radius: 20px;
+    /* border: solid 0.5px rgba(255, 166, 0, 0.267);
+    box-shadow: 0 0 10px rgba(255, 161, 99, 0.5); */
+    p{
+        border:none;
+        color: #9fb4cf;
+        /* text-align: ; */
+    }
+}
+#minititulo{
+    display:flex;
+
+    i{
+        margin: 0 5px 10px;
+    }
+    h4{
+        font-size: 21px;
+    }
+ 
 }
 
 .tag{
