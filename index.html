@@ -12,6 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,14 +37,14 @@
 
     <nav>
 
-        <a href="#inicio"> Início </a>
-        <a href="#problema"> Problema </a>
-        <a href="#tecnologia"> Tecnologias </a>
-        <a href="#objetivos"> Objetivo </a>
-        <a href="#publico"> Público Alvo </a>
-        <a href="#beneficios"> Benefícios </a>
-        <a href="#dia_a_dia"> AstroLab na Prática  </a>
-        <a href="#terra"> Aplicações na Terra </a>
+        <a href="#inicio"> <i class="bxf bx-rocket"></i> Início </a>
+        <a href="#problema"> <i class="bxf bx-alert-triangle"></i> Problema </a>
+        <a href="#tecnologia"> <i class="bxf bx-psychology"></i> Tecnologias </a>
+        <a href="#objetivos"> <i class="bxf bx-bullseye"></i> Objetivo </a>
+        <a href="#publico"> <i class="bxf bx-community"></i> Público Alvo </a>
+        <a href="#beneficios"> <i class="bxf bx-arrow-big-up-line"></i> Benefícios </a>
+        <a href="#dia_a_dia"> <i class="bxf bx-moon"></i> AstroLab na Prática  </a>
+        <a href="#planeta-terra"> <i class="bxf bx-globe-antartica"></i> Aplicações na Terra </a>
         
     </nav>
 
@@ -78,21 +86,35 @@
 
         <section class="section problema" id="problema">
 
-            <span class="tag"> PROBLEMA </span>
+            <span class="tag vermelha"> Problema </span>
 
-            <h2>Falhas críticas sem suporte imediato</h2>
+            <h2>O Desafio da <span id="latencia">Latencia Extrêma</span></h2>
 
-            <img src="./images/1.png" id="esquema" alt="Representação de latência entre Marte e Terra">
+            <div class="desenho">
 
-            <div class="destaque">
-            Em missões para Marte, a comunicação com a Terra pode levar até 40 minutos.
+                <div class="planeta">
+                    <div class="marte"></div>
+                    <span>MARTE</span>
+                </div>
+
+                <div class="separador">
+                    <div class="linha"></div>
+                    <div class="container">
+                        40 MIN
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="planeta">
+                    <div class="terra"></div>
+                    <span>TERRA</span>
+                </div>
+
             </div>
 
-            <ul>
-                <li> Suporte remoto inviável em emergências</li>
-                <li> Estoque limitado de peças</li>
-                <li> Dependência de especialistas na Terra</li>
-            </ul>
+            <div class="destaque" id="destaque_problema"">
+            Quando uma peça falha, o astronauta precisa <span id="branco">agir sozinho</span>. O AstroLab foi criado para eliminar essa dependência, fornecendo diagnóstico e fabricação autônomos. 
+            </div>
 
             <p> 
                 Quando uma peça falha, o astronauta precisa agir sozinho.
@@ -104,7 +126,7 @@
 
         <section class="section tecnologia" id="tecnologia">
 
-            <span class="tag"> TECNOLOGIAS </span>
+            <span class="tag ciano"> TECNOLOGIAS </span>
 
             <h2> O Cérebro por Trás do AstroLab </h2>
 
@@ -154,17 +176,19 @@
 
         <section class="section objetivos" id="objetivos">
 
-             <span class="tag"> OBJETIVO </span>
+             <span class="tag roxo"> OBJETIVO </span>
 
-             <h2> O Que desejamos alcançar? </h2>
+             <h2> Autonomia em Espaço Profundo </h2>
+ 
+             <p>"Nossa missão é eliminar a dependência de Terra para manutenção de hardware crítico, transformando naves espaciais em ecossistemas autossuficientes capazes de diagnosticar e fabricar qualquer componente sob demanda."</p>
 
-             <div class="destaque">
+            <div class="destaque">
                 Astronauta auto-suficiente, preparado para qualquer imprevisto.
             </div>
 
-            <p>O principal objetivo do AstroLab é entregar autonomia total ao astronauta para fabricar peças de reposição sem depender de conexão com a Terra, conhecimento técnico especializado ou suporte remoto. O sistema busca automatizar todo o fluxo de fabricação — do diagnóstico à impressão —, garantindo que as peças produzidas sejam seguras, certificadas e adequadas às condições ambientais da nave no momento da fabricação.</p>
-        </section>
+            </section>
 
+            
         <section class="section publico" id="publico">
             <span class="tag"> PÚBLICO ALVO </span>
 
@@ -189,12 +213,17 @@
             <p>Na prática, quando uma peça falha a bordo, o astronauta simplesmente descreve o problema com suas próprias palavras ou fotografa a peça danificada. O AstroLab identifica automaticamente o design correspondente, verifica se há material disponível e compatível, ajusta os parâmetros da impressora de acordo com as condições ambientais da nave e solicita uma confirmação final antes de iniciar a fabricação — tudo isso sem consultar manuais, sem contatar a Terra e sem precisar de qualquer conhecimento técnico de impressão 3D.</p>
         </section>
         
-        <section class="section terra" id="terra">
+        <section class="section planeta-terra" id="planeta-terra">
 
             <span class="tag"> APLICACOES NA TERRA </span>
 
             <h2>Aplicações na Terra</h2>    
-            <p> Embora o AstroLab tenha sido concebido para missões espaciais, sua proposta central — fabricação autônoma de peças em ambientes isolados sem depender de suporte externo — resolve um problema muito mais amplo aqui na Terra. Plataformas de exploração de petróleo offshore, por exemplo, operam a centenas de quilômetros da costa, onde o transporte de uma peça de reposição pode levar dias e uma falha de equipamento pode significar paralisação total da operação ou risco à segurança da tripulação. O mesmo se aplica a bases de pesquisa na Antártida, garimpos e minerações em regiões remotas, navios em alto mar e até hospitais de campanha em zonas de conflito ou catástrofe — todos ambientes onde um técnico especializado não está disponível e o tempo de resposta logístico é inaceitável. Nesses contextos, o AstroLab atuaria da mesma forma: o operador descreve ou fotografa a peça com defeito, o sistema identifica o design certificado correspondente, verifica os materiais disponíveis e executa a impressão de forma autônoma, eliminando a dependência de cadeia de suprimentos e suporte remoto.</p>
+
+            <div class="container-terra">
+                
+            </div>
+
+            <!-- <p> Embora o AstroLab tenha sido concebido para missões espaciais, sua proposta central — fabricação autônoma de peças em ambientes isolados sem depender de suporte externo — resolve um problema muito mais amplo aqui na Terra. Plataformas de exploração de petróleo offshore, por exemplo, operam a centenas de quilômetros da costa, onde o transporte de uma peça de reposição pode levar dias e uma falha de equipamento pode significar paralisação total da operação ou risco à segurança da tripulação. O mesmo se aplica a bases de pesquisa na Antártida, garimpos e minerações em regiões remotas, navios em alto mar e até hospitais de campanha em zonas de conflito ou catástrofe — todos ambientes onde um técnico especializado não está disponível e o tempo de resposta logístico é inaceitável. Nesses contextos, o AstroLab atuaria da mesma forma: o operador descreve ou fotografa a peça com defeito, o sistema identifica o design certificado correspondente, verifica os materiais disponíveis e executa a impressão de forma autônoma, eliminando a dependência de cadeia de suprimentos e suporte remoto.</p> -->
         </section>
     </main>
 
