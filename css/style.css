@@ -153,6 +153,7 @@ nav a:hover{
 }
 
 .section h2{
+    font-family: var(--title);
     font-size:var(--title-size);
     margin: 20px 0;
 }
@@ -184,6 +185,23 @@ nav a:hover{
 
 #latencia{
     color: rgb(240, 138, 70);
+}
+
+.desc-latencia{
+    position:relative;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    p{
+        border: none;
+        /* text-align: center; */
+        color: #9fb4cf;
+        font-size: 22px;
+                #branco {
+        color: white;
+        font-weight: bold;
+    }
+    }
 }
 
 .marte,
@@ -247,7 +265,7 @@ nav a:hover{
 }
 
 #destaque_problema{
-        color: rgb(131, 131, 131);
+        color: rgb(255, 255, 255);
         background: none;
         
         #branco {
@@ -260,6 +278,37 @@ nav a:hover{
     padding:80px;
     display:flex;
     align-items:center;
+}
+
+.cards{
+    /* width: 1000px; */
+    display:flex;
+    justify-content: space-evenly;
+    margin: 80px;
+    gap: 50px;
+}
+.card {
+    width: 400px;
+    padding:20px;
+    border-radius: 20px;
+    /* border: solid 0.5px rgba(255, 166, 0, 0.267);
+    box-shadow: 0 0 10px rgba(255, 161, 99, 0.5); */
+    p{
+        border:none;
+        color: #9fb4cf;
+        /* text-align: ; */
+    }
+}
+#minititulo{
+    display:flex;
+
+    i{
+        margin: 0 5px 10px;
+    }
+    h4{
+        font-size: 21px;
+    }
+ 
 }
 
 .tag{
@@ -318,9 +367,66 @@ nav a:hover{
     line-height:1.8;
     max-width:900px;
     text-align:center;
+}
 
+#roxo{
+    color:#6f39ed;
+}
+
+.desc-objetivos{
+    position:relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    p{
+        border: none;
+        /* text-align: center; */
+        color: #9fb4cf;
+        font-size: 22px;
+    }
+}
+.objetivo {
+    width: 945px;
+    height: 350px;
     padding:30px;
-    border-radius:5px;
-    border:1px solid rgba(91, 35, 222, 0.263);
-    background:rgba(9, 14, 32, 0.358);
+    border-radius:10px;
+    border:2px solid rgba(91, 35, 222, 0.263);
+    background:rgba(23, 27, 44, 0.358);
+    justify-content: center;
+    align-items: center;
+
+    p{
+        border: none;
+        font-style: italic;
+    }
+}
+
+
+#dados {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+
+    p{
+        color: #9fb4cf;
+    }
+}
+
+.dado-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+}
+
+#destaque_dados{
+    font-size: 30px;
+    font-family: var(--title);
+    color: #6f39ed;
+    font-weight: bolder;
+}
+
+#dado{
+  color: #9fb4cf;
 }
