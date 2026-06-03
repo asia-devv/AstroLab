@@ -153,6 +153,7 @@ nav a:hover{
 }
 
 .section h2{
+    font-family: var(--title);
     font-size:var(--title-size);
     margin: 20px 0;
 }
@@ -366,9 +367,66 @@ nav a:hover{
     line-height:1.8;
     max-width:900px;
     text-align:center;
+}
 
+#roxo{
+    color:#6f39ed;
+}
+
+.desc-objetivos{
+    position:relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    p{
+        border: none;
+        /* text-align: center; */
+        color: #9fb4cf;
+        font-size: 22px;
+    }
+}
+.objetivo {
+    width: 945px;
+    height: 350px;
     padding:30px;
-    border-radius:5px;
-    border:1px solid rgba(91, 35, 222, 0.263);
-    background:rgba(9, 14, 32, 0.358);
+    border-radius:10px;
+    border:2px solid rgba(91, 35, 222, 0.263);
+    background:rgba(23, 27, 44, 0.358);
+    justify-content: center;
+    align-items: center;
+
+    p{
+        border: none;
+        font-style: italic;
+    }
+}
+
+
+#dados {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+
+    p{
+        color: #9fb4cf;
+    }
+}
+
+.dado-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+}
+
+#destaque_dados{
+    font-size: 30px;
+    font-family: var(--title);
+    color: #6f39ed;
+    font-weight: bolder;
+}
+
+#dado{
+  color: #9fb4cf;
 }
