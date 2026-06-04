@@ -125,6 +125,7 @@ nav a:hover{
     color:#35D07F;
 }
 
+/* -- Seção 1 -- */
 .inicio{
     display:flex;
     justify-content:center;
@@ -153,6 +154,7 @@ nav a:hover{
     margin:auto;
 }
 
+/*  -- Seções sem Style (Apagar dps) */
 .conteudo{
     background:rgba(255,255,255,.03);
     border:1px solid rgba(255,255,255,.08);
@@ -168,6 +170,7 @@ nav a:hover{
 }
 
 
+/* -- Padronização das Seções --  */
 .section{
     min-height:100vh;
 
@@ -197,6 +200,7 @@ nav a:hover{
     border:1px solid rgba(77,163,255,.1);
 }
 
+/* -- Seção 2 -- */
 .desenho{
     margin-top:80px;
     display:flex;
@@ -348,10 +352,11 @@ nav a:hover{
     
 }
 .vermelha{
-    border: 1px solid rgba(255,0,0,.2);
-    color:#ff5f5f;
+    border: 1px solid rgba(255, 0, 0, 0.457);
+    color:#f11f1f;
 }
 
+/*  -- Seção 3 -- */
 .tecnologia, .publico, .dia_a_dia{
     background: var(--background-secondary);
     display:flex;
@@ -360,8 +365,8 @@ nav a:hover{
 }
 
 .ciano{
-    border: 1px solid rgba(20, 184, 166, 0.3);
-    color:#05e6e2
+    border: 1px solid #02baba9e;
+    color:#00ffff
 }
 
 .tech-grade{
@@ -381,6 +386,7 @@ nav a:hover{
     border-radius:15px;
 }
 
+/*  -- Seção 4 -- */
 .objetivos{
     display:flex;
     align-items:center;
@@ -460,8 +466,94 @@ nav a:hover{
   color: #9fb4cf;
 }
 
-/* -- Seção 8 -- */
+.roxo{
+    border: 1px solid rgba(129, 90, 213, 0.391);
+    color:#6f39ed;
+}
 
+.objetivos p{
+    font-size:20px;
+    line-height:1.8;
+    max-width:900px;
+    text-align:center;
+
+    padding:30px;
+    border-radius:5px;
+    border:1px solid rgba(91, 35, 222, 0.263);
+    background:rgba(9, 14, 32, 0.358);
+}
+
+/*  -- Seção 6 -- */
+.beneficios {
+    padding: 60px 0px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.beneficio-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.beneficio-item .beneficio-texto {
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.beneficio-item .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.03); 
+    font-size: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.seguranca { margin-left: -40px; }
+.autonomia { margin-left: 100px; }
+.erros { margin-left: 200px; }
+.desperdicio { margin-left: 20px; }
+
+.beneficio-item:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.beneficio-item:hover .text {
+    color: #ffffff;
+}
+
+.beneficios .tag {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.verde {
+    border: 1px solid #22c55e78;;
+    color:#22c55e;
+}
+
+/* -- Seção 8 -- */
 .planeta-terra {
     max-width: 1000px;
     width: 100%;
