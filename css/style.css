@@ -92,6 +92,35 @@ nav a:hover{
     transform: scale(1.05);
 }
 
+.nav-problema:hover{
+    background:#f11f1f78;
+    color:white;
+}
+.nav-tecnologia:hover{
+    background:rgba(5, 230, 226, 0.478);
+    color:white;
+}
+.nav-objetivos:hover{
+    background:#6f39ed77;
+    color:white;
+}
+.nav-publico:hover{
+    background:#00c3ff78;
+    color:white;
+}
+.nav-beneficios:hover{
+    background:#22c55e76;
+    color:white;
+}
+.nav-dia:hover{
+    background:#f59f0b78;
+    color:white;
+}
+.nav-planeta:hover{
+    background:#029d9d58;
+    color:white;
+}
+
 .status{
     color:#35D07F;
 }
