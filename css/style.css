@@ -459,3 +459,104 @@ nav a:hover{
 #dado{
   color: #9fb4cf;
 }
+
+/* -- Seção 8 -- */
+
+.planeta-terra {
+    max-width: 1000px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.planeta-terra .tag,
+.planeta-terra h2,
+.planeta-terra p {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.turquesa {
+    border: 1px solid #0c6157;
+    color: #00cbcc;
+}
+
+.container-grade {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linha-grade {
+    display: flex;
+    gap: 20px;
+    height: 240px;
+}
+
+.cartao {
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cartao:hover {
+    transform: scale(1.02);
+}
+
+.cartao-off {
+    flex: 1.6;
+    background:  linear-gradient(
+            rgba(255, 255, 255, 0),
+            #000000e8
+            ),
+            url('../images/offshore.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.cartao-mine {
+    flex: 1.6;
+    background:  linear-gradient(
+            rgba(255, 255, 255, 0),
+            #000000e8
+            ),
+            url('../images/mineração.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.cartao-antar {
+    flex: 1;
+    background:  linear-gradient(
+            rgba(255, 255, 255, 0),
+            #000000e8
+            ),
+            url('../images/antartida.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.cartao-hospi {
+    flex: 1;
+    background:  linear-gradient(
+            rgba(255, 255, 255, 0),
+            #000000e8
+            ),
+            url('../images/hospital.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.cartao h3 {
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: white;
+}
