@@ -152,6 +152,8 @@ nav a:hover{
     font-size:22px;
     max-width:900px;
     margin:auto;
+    font-style: italic;
+    color: #8f8f8f;
 }
 
 /*  -- Seções sem Style (Apagar dps) */
@@ -1036,4 +1038,26 @@ nav a:hover{
     font-size: 28px;
     color: #f88527;
     background-color: #f8852777;
+}
+
+#footer{
+    border-top: solid 1px rgba(212, 234, 255, 0.171);
+    /* border-top: solid 1px rgba(255, 0, 0, 0.227); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#8291a7;
+    /* height: 200px; */
+
+}
+
+#footer p {
+    margin: 10px;
+}
+
+.container-logo{
+        img{
+        max-width: 150px;
+        margin: 20px 10px;
+    }
 }
