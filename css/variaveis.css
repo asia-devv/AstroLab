@@ -11,6 +11,12 @@
     --text-size: 18px;
 
     --title-size: 56px;
+
+    --background-color: #49494988;
+
+    --border-color: #616161;
+
+
 }
 
 html.light-tema {
@@ -25,6 +31,8 @@ html.light-tema {
 
     --text-color: #1d1b1b;
     --border-color: #301611;
+
+    --background-color: #d8d8d8;
 }
 
 html.galaxy-tema {
@@ -33,4 +41,6 @@ html.galaxy-tema {
     --background-sidebar: #1a0f4700;
     --border-color: #5b23de;
     --text-color: #e0d7ff;
+
+    --background-color: #283046b0;
 }
