@@ -1054,8 +1054,8 @@ nav a:hover{
     justify-content:center;
     padding:80px 10%;
     background:  linear-gradient(
-            #030e25,
-            rgba(0, 0, 0, 0.473)
+            var(--background-secondary),
+            rgba(0, 0, 0, 0.274)
             
             ),
             url('../images/banner.gif');
@@ -1106,4 +1106,155 @@ nav a:hover{
         max-width: 150px;
         margin: 20px 10px;
     }
+}
+
+
+/* -- Seção Contato -- */
+.contato {
+    align-items: center;
+    background: var(--background-secondary);
+    border-bottom: none;
+    border-top: 1px solid #263552;
+}
+
+
+#contato-destaque {
+    color: #4DA6FF;
+}
+
+.contato-desc {
+    color: #9fb4cf;
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+}
+
+#contato-desc {
+    padding-left: 0;
+    margin-left:40px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-grupo label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #4DA6FF;
+    font-family: var(--text);
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+    background: rgba(9, 14, 32, 0.8);
+    border: 1px solid #263552;
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: white;
+    font-size: 15px;
+    font-family: var(--text);
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #3d4f68;
+}
+
+.form-grupo select option {
+    background: #090d16;
+    color: white;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    border-color: #4DA6FF;
+    box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.1);
+}
+
+.form-grupo input.invalido,
+.form-grupo select.invalido,
+.form-grupo textarea.invalido {
+    border-color: #E24B4A;
+    box-shadow: 0 0 0 3px rgba(226, 75, 74, 0.1);
+}
+
+.form-grupo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-erro {
+    font-size: 12px;
+    color: #E24B4A;
+    letter-spacing: 0.5px;
+    min-height: 16px;
+}
+
+.form-rodape {
+    display: flex;
+    align-items: center;
+    /* align-self: center; */
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.form-status {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-right: 20px;
+}
+
+.form-status.sucesso {
+    color: #35D07F;
+}
+
+.form-status.erro {
+    color: #E24B4A;
+}
+
+.btn-transmitir {
+    background: #4DA6FF;
+    color: #050B1A;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 32px;
+    font-family: var(--text);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-transmitir:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.btn-transmitir:active {
+    transform: scale(0.97);
+}
+
+.nav-contato:hover {
+    background: rgba(77, 166, 255, 0.15);
+    color: white;
 }
