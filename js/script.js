@@ -149,3 +149,40 @@ function slideshow() {
 }
 
 setInterval(slideshow, 5000);
+
+// -- Scroll Spy: destaca o link ativo na sidebar --
+
+const secoes = [
+    { id: 'inicio',       nav: '.nav-inicio'   },
+    { id: 'problema',     nav: '.nav-problema'  },
+    { id: 'tecnologia',   nav: '.nav-tecnologia'},
+    { id: 'objetivos',    nav: '.nav-objetivos' },
+    { id: 'publico',      nav: '.nav-publico'   },
+    { id: 'beneficios',   nav: '.nav-beneficios'},
+    { id: 'dia_a_dia',    nav: '.nav-dia'       },
+    { id: 'planeta-terra',nav: '.nav-planeta'   },
+    { id: 'contato',      nav: '.nav-contato'   },
+    { id: 'fim',          nav: '.nav-fim'        },
+];
+
+function atualizarNavAtiva() {
+    let secaoAtual = secoes[0].id;
+
+    secoes.forEach(({ id }) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const topo = el.getBoundingClientRect().top;
+        if (topo <= window.innerHeight * 0.4) {
+            secaoAtual = id;
+        }
+    });
+
+    secoes.forEach(({ id, nav }) => {
+        const link = document.querySelector(nav);
+        if (!link) return;
+        link.classList.toggle('active', id === secaoAtual);
+    });
+}
+
+window.addEventListener('scroll', atualizarNavAtiva);
+atualizarNavAtiva(); // roda na carga pra já marcar o início

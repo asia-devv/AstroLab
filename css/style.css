@@ -86,6 +86,7 @@ nav a{
     transition: all ease 0.5s;
 }
 
+
 nav a:hover{
     background:#18233B;
     color:white;
@@ -120,32 +121,98 @@ nav a:hover{
     background:#029d9d58;
     color:white;
 }
+.nav-contato:hover{
+    background:#00c3ff78;
+    color:white;
+}
+.nav-fim:hover {
+    background: rgba(5, 230, 226, 0.478);
+    color: white;
+}
+/* Scroll Spy - link ativo na sidebar */
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #cccccc;
+    color: #fff;
+}
+.nav-inicio.active {
+    /* background: o que você quiser pro início */
+    color: white;
+}
+.nav-problema.active {
+    background: #f11f1f78;
+    color: white;
+}
+.nav-tecnologia.active {
+    background: rgba(5, 230, 226, 0.478);
+    color: white;
+}
+.nav-objetivos.active {
+    background: #6f39ed77;
+    color: white;
+}
+.nav-publico.active {
+    background: #00c3ff78;
+    color: white;
+}
+.nav-beneficios.active {
+    background: #22c55e76;
+    color: white;
+}
+.nav-dia.active {
+    background: #f59f0b78;
+    color: white;
+}
+.nav-planeta.active {
+    background: #029d9d58;
+    color: white;
+}
+.nav-contato.active{
+    background:#00c3ff78;
+    color:white;
+}
+.nav-fim.active {
+    background: rgba(5, 230, 226, 0.478);
+    color: white;
+}
 
 .status{
     color:#35D07F;
 }
 
 /* -- Seção 1 -- */
-.inicio{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-   
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:80px 10%;
-    background:  linear-gradient(
-            rgba(0,0,0,0.4),
-            #030e25
-            ),
-            url('../images/banner.gif');
+.inicio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 80px 10%;
+}
+
+.inicio::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        #030e25
+    );
+    z-index: 1;
+}
+.bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .astrolab {
     width: 500px;
+    z-index: 2;
 }
 
 .subtitulo{
@@ -154,6 +221,7 @@ nav a:hover{
     margin:auto;
     font-style: italic;
     color: #8f8f8f;
+    z-index: 2;
 }
 
 /*  -- Seções sem Style (Apagar dps) */
@@ -1281,9 +1349,4 @@ nav a:hover{
 
 .btn-transmitir:active {
     transform: scale(0.97);
-}
-
-.nav-contato:hover {
-    background: rgba(77, 166, 255, 0.15);
-    color: white;
 }
