@@ -8,7 +8,7 @@
     <title>AstroLab</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variaveis.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,8 @@
         <a href="#beneficios" class="nav-beneficios"> <i class="bxf bx-arrow-big-up-line"></i> Benefícios </a>
         <a href="#dia_a_dia" class="nav-dia"> <i class="bxf bx-moon"></i> AstroLab na Prática  </a>
         <a href="#planeta-terra" class="nav-planeta"> <i class="bxf bx-globe-antartica"></i> Aplicações na Terra </a>
-        <a href="#fim" class="nav-publico"> <i class="bxf bx-plus-circle"></i> Mais Detalhes</a>
+        <a href="#contato" class="nav-publico"> <i class="bxf bx-send"></i> Contato</a>
+        <a href="#fim" class="nav-tecnologia"> <i class="bxf bx-plus-circle"></i> Mais Detalhes</a>
         
     </nav>
 
@@ -65,7 +66,7 @@
             <div id="clock"></div>
 
             <div class="user">
-                Atronauta Lu
+                Atronauta Lu Shun
             </div>
 
         </div>
@@ -333,7 +334,7 @@
                     </div>
 
                     <div class="cartao cartao-antar">
-                        <h3> Antártida </h3>
+                        <h3> Antáritada </h3>
                     </div>
                 </div>
 
@@ -349,10 +350,59 @@
 
             </div>
         </section>
+        <section class="section contato" id="contato">
+
+            <span class="tag azul"> CONTATO </span>
+
+            <h2>Envie uma <span id="contato-destaque">Transmissão</span></h2>
+
+            <p class="contato-desc" id="contato-desc">Tem dúvidas sobre o AstroLab? Envie uma mensagem para a nossa base de operações.</p>
+
+            <form class="form-contato" id="form-contato" novalidate>
+
+                <div class="form-grupo">
+                    <label for="nome">NOME DE IDENTIFICAÇÃO</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="off">
+                    <span class="form-erro" id="erro-nome"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">EMAIL DE IDENTIFICAÇÃO</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="off">
+                    <span class="form-erro" id="erro-email"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="assunto">PROTOCOLO</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida técnica</option>
+                        <option value="parceria">Proposta de parceria</option>
+                        <option value="imprensa">Imprensa</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <span class="form-erro" id="erro-assunto"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensagem">MENSAGEM</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua mensagem..."></textarea>
+                    <span class="form-erro" id="erro-mensagem"></span>
+                </div>
+
+                <div class="form-rodape">
+                    <span class="form-status" id="form-status"></span>
+                    <button type="submit" class="btn-transmitir">TRANSMITIR ›</button>
+                </div>
+
+            </form>
+
+        </section>
+
         <section class="fim" id="fim">
 
              <!-- <img src="./images/ícone_branco.png" alt="Logo AstroLab" class="astrolab"> -->
-              <span class="tag azul"> MAIS DETALHES </span>
+              <span class="tag ciano"> MAIS DETALHES </span>
 
             <p class="subtitulo-fim"> 
                 Nenhuma missão será segura sem a capacidade de autoconfecção. O AstroLab não é apenas uma ferramenta, é a garantia de sobrevivência da espécia além da Terra. 
@@ -386,7 +436,7 @@
 
    
 
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>
