@@ -12,7 +12,6 @@ body{
     display:flex;
     background: var(--background-primary);
     color:white;
-    /* font-family:Segoe UI; */
     font-family: var(--text);
 }
 
@@ -20,13 +19,47 @@ body{
 .sidebar{
     width:260px;
     height:100vh;
-
-    background:#08112100;
-    /* background-image: url(../images/fundo-galaxia.jpg); */
+    background: var(--background-sidebar);
+    color: var(--text-color);
     border-right:1px solid #263552;
-
     position:fixed;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.tema-container {
+    margin-top: auto; 
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.tema-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-muted);
+    font-family: var(--text);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.tema-btn:hover {
+    background: #18233B;
+    color: var(--text-color);
+}
+
+html.light-tema .tema-btn:hover {
+    background: #e2e8f0;
+}
+
+
 
 .main{
     margin-left:260px;
@@ -41,11 +74,13 @@ body{
 
     padding-top: 64px;
     box-sizing: border-box;
+
+    color: var(--text-color);
 }
 
 header{
     height:64px;
-    background:#101a2ef7;
+    background: var(--background-header);
     border-bottom:1px solid #263552;
 
     display:flex;
@@ -88,7 +123,7 @@ nav{
 }
 
 nav a{
-    color:#A8B3CC;
+    color:var(--text-color);
     text-decoration:none;
     padding:12px;
     border-radius:6px;
@@ -137,24 +172,6 @@ nav a:hover{
     max-width:900px;
     padding:20px;
 }
-
-/* a{
-    border-radius: 10px;
-    text-decoration: none;
-    color: #0d1d41;
-    font-family: var(--title);
-    font-size: 21px;
-    background-color: #d6d6d6;
-    padding: 15px;
-    width: 500px;
-    transition: all ease 0.6s;
-    margin-top: 30px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-} */
 
 .quiz-container {
     width: 100%;
