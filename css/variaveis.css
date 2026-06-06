@@ -4,10 +4,33 @@
 :root{
     --background-primary: #030e25;
     --background-secondary: #051224;
+    --background-sidebar: #08112100;
 
     --title: 'Play';
     --text: 'Exo';
     --text-size: 18px;
 
     --title-size: 56px;
+}
+
+html.light-tema {
+    --background-primary: #6494c4d1;
+    --background-sidebar: ##6494c4d1;
+    --background-header: #6494c4;
+
+    --background-card: rgba(23, 27, 44, 0.651);
+
+    --background-barra: #2b67a3;
+    --background-barra2: #b3c4d5;
+
+    --text-color: #1d1b1b;
+    --border-color: #301611;
+}
+
+html.galaxy-tema {
+    --background-primary: #000000;
+    --background-secondary: #1b1342;
+    --background-sidebar: #1a0f4700;
+    --border-color: #5b23de;
+    --text-color: #e0d7ff;
 }

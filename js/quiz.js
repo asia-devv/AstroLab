@@ -202,3 +202,57 @@ function restartQuiz() {
 }
 
 document.addEventListener('DOMContentLoaded', render);
+
+
+
+// --- SISTEMA DE SELEÇÃO DE TRÊS TEMAS (ESCURO, CLARO, GALÁXIA) ---
+
+document.addEventListener('DOMContentLoaded', () => {
+  const botaoTema = document.getElementById('tema-alt');
+  const iconeTema = document.getElementById('tema-icone');
+  const textoTema = document.getElementById('tema-txt');
+  const htmlElement = document.documentElement;
+
+  // Lista com a ordem dos temas
+  const temas = ['dark', 'light', 'galaxy'];
+  
+  // Recupera o tema salvo ou começa no padrão 'dark'
+  let temaAtual = localStorage.getItem('theme') || 'dark';
+
+  // Aplica o tema salvo logo ao carregar a página
+  aplicarTema(temaAtual);
+
+  if (botaoTema) {
+    botaoTema.addEventListener('click', () => {
+      // Descobre o índice do tema atual e avança para o próximo da lista
+      let proximoIndice = (temas.indexOf(temaAtual) + 1) % temas.length;
+      temaAtual = temas[proximoIndice];
+
+      // Salva no navegador e aplica o novo tema
+      localStorage.setItem('theme', temaAtual);
+      aplicarTema(temaAtual);
+    });
+  }
+
+  function aplicarTema(tema) {
+    // 1. Remove todas as classes de temas anteriores para não dar conflito
+    htmlElement.classList.remove('light-tema', 'galaxy-tema');
+
+    // 2. Aplica a classe correspondente e atualiza os textos/ícones
+    if (tema === 'light') {
+      htmlElement.classList.add('light-tema');
+      if (iconeTema) iconeTema.className = 'bx bx-sun';
+      if (textoTema) textoTema.textContent = ' Modo Claro ';
+    } 
+    else if (tema === 'galaxy') {
+      htmlElement.classList.add('galaxy-tema');
+      if (iconeTema) iconeTema.className = 'bx bx-planet'; // Ícone de planeta para o tema espacial
+      if (textoTema) textoTema.textContent = ' Modo Galáxia ';
+    } 
+    else {
+      // Padrão Dark
+      if (iconeTema) iconeTema.className = 'bx bx-moon';
+      if (textoTema) textoTema.textContent = ' Modo Escuro ';
+    }
+  }
+});

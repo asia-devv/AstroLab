@@ -12,7 +12,7 @@
 /* Barra de progresso */
 .quiz-progress-bar {
     height: 2px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--background-barra2);
     border-radius: 2px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -20,7 +20,7 @@
 
 .quiz-progress-fill {
     height: 100%;
-    background: #4DA6FF;
+    background: var(--background-barra);
     border-radius: 2px;
     transition: width 0.4s ease;
 }
@@ -28,7 +28,7 @@
 /* Card da pergunta */
 .quiz-question-card {
     position: relative;
-    background: rgba(23, 27, 44, 0.5);
+    background: var(--background-card);
     border: 1px solid rgba(91, 35, 222, 0.25);
     border-radius: 10px;
     padding: 28px 32px;
@@ -87,8 +87,8 @@
 }
 
 .quiz-ans-btn {
-    background: rgba(23, 27, 44, 0.4);
-    border: 1px solid #263552;
+    background: var(--background-card);
+    border: 1px solid #523b26;
     border-radius: 8px;
     padding: 16px 18px;
     text-align: left;
@@ -179,12 +179,12 @@
 
 .quiz-score-display {
     font-size: 12px;
-    color: #8291a7;
+    color: var(--background-card);
     letter-spacing: 1px;
 }
 
 .quiz-score-display strong {
-    color: #4DA6FF;
+    color: var(--background-barra)
 }
 
 .quiz-btn-next {
