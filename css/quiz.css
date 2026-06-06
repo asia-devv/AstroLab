@@ -31,16 +31,17 @@ body{
 .tema-container {
     margin-top: auto; 
     padding: 20px;
-    border-top: 1px solid var(--border-color);
+    /* border-top: 1px solid var(--border-color); */
 }
 
-.tema-btn {
+#tema-alt {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 12px;
     background: transparent;
+    /* background-color: var(--background-color); */
     border: 1px solid var(--border-color);
     border-radius: 20px;
     color: var(--text-muted);
@@ -50,12 +51,13 @@ body{
     transition: all ease 0.3s;
 }
 
-.tema-btn:hover {
-    background: #18233B;
+#tema-alt:hover {
+    background-color: var(--background-color);
+    /* background: #18233B; */
     color: var(--text-color);
 }
 
-html.light-tema .tema-btn:hover {
+html.light-tema .tema-alt:hover {
     background: #e2e8f0;
 }
 
