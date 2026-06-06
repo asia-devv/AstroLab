@@ -811,6 +811,136 @@ nav a:hover{
     color:#22c55e;
 }
 
+/* -- Seção 7 -- */
+.amarelo {
+    border: 1px solid #f7b31f98;;
+    color:#f7ac1f;
+}
+
+/* cards secao astrolab na pratica */ 
+.cards-verticais{
+    display:flex;
+    width: 1000px;
+    height: 450px;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+}
+
+.card-item {
+    width: 200px;
+    min-width: 80px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid rgba(30, 100, 180, 0.3);
+    border-radius: 8px;
+    background: rgba(9, 14, 32, 0.8);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    i{
+        font-size: 40px;
+        margin: 20px 0;
+        color: #2592ff;
+
+    }
+}
+
+.card-item:hover {
+    width: 300px;
+    height: 500px;
+}
+
+.card-item p {
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease 0s; /* delay pra esperar o card abrir */
+    color: #9fb4cf;
+}
+
+.card-item:hover p {
+    opacity: 1;
+    max-width: 400px;
+    white-space: normal;
+}
+
+#card-numero {
+    font-family: var(--title);
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #4DA6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #4DA6FF;
+    background-color: #4da6ff4f;
+}
+#card-titulo{
+    font-family: var(--title);
+    font-size: 16px;
+    width: 150px;
+}
+
+.card-item4 {
+    width: 200px;
+    min-width: 80px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid #f88527;
+    border-radius: 8px;
+    background: rgba(9, 14, 32, 0.8);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    i{
+        font-size: 40px;
+        margin: 20px 0;
+        color: #ff9114;
+
+    }
+}
+
+.card-item4:hover {
+    width: 300px;
+    height: 500px;
+}
+
+.card-item4 p {
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease 0.2s; /* delay pra esperar o card abrir */
+    color: #9fb4cf;
+}
+
+.card-item4:hover p {
+    opacity: 1;
+    max-width: 400px;
+    white-space: normal;
+}
+
+#card-numero4 {
+    font-family: var(--title);
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #e78b13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #f88527;
+    background-color: #f8852777;
+}
+
 /* -- Seção 8 -- */
 .planeta-terra {
     max-width: 1000px;
@@ -909,135 +1039,6 @@ nav a:hover{
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: white;
-}
-.amarelo {
-    border: 1px solid #f7b31f98;;
-    color:#f7ac1f;
-}
-
-/* cards secao astrolab na pratica */ 
-.cards-verticais{
-    display:flex;
-    width: 1000px;
-    height: 450px;
-    justify-content: space-evenly;
-    /* overflow: hidden; */
-}
-
-.card-item {
-    width: 200px;
-    min-width: 80px;
-    height: 250px;
-    padding: 20px;
-    border: 1px solid rgba(30, 100, 180, 0.3);
-    border-radius: 8px;
-    background: rgba(9, 14, 32, 0.8);
-    overflow: hidden;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    flex-shrink: 0;
-
-    i{
-        font-size: 40px;
-        margin: 20px 0;
-        color: #2592ff;
-
-    }
-}
-
-.card-item:hover {
-    width: 300px;
-    height: 500px;
-}
-
-.card-item p {
-
-    opacity: 0;
-    max-width: 0;
-    white-space: nowrap;
-    transition: opacity 0.3s ease 0s; /* delay pra esperar o card abrir */
-    color: #9fb4cf;
-}
-
-.card-item:hover p {
-    opacity: 1;
-    max-width: 400px;
-    white-space: normal;
-}
-
-#card-numero {
-    font-family: var(--title);
-    font-weight: bold;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #4DA6FF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    color: #4DA6FF;
-    background-color: #4da6ff4f;
-}
-#card-titulo{
-    font-family: var(--title);
-    font-size: 16px;
-    width: 150px;
-}
-
-.card-item4 {
-    width: 200px;
-    min-width: 80px;
-    height: 250px;
-    padding: 20px;
-    border: 1px solid #f88527;
-    border-radius: 8px;
-    background: rgba(9, 14, 32, 0.8);
-    overflow: hidden;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    flex-shrink: 0;
-
-    i{
-        font-size: 40px;
-        margin: 20px 0;
-        color: #ff9114;
-
-    }
-}
-
-.card-item4:hover {
-    width: 300px;
-    height: 500px;
-}
-
-.card-item4 p {
-    opacity: 0;
-    max-width: 0;
-    white-space: nowrap;
-    transition: opacity 0.3s ease 0.2s; /* delay pra esperar o card abrir */
-    color: #9fb4cf;
-}
-
-.card-item4:hover p {
-    opacity: 1;
-    max-width: 400px;
-    white-space: normal;
-}
-
-#card-numero4 {
-    font-family: var(--title);
-    font-weight: bold;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #e78b13;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    color: #f88527;
-    background-color: #f8852777;
 }
 
 .fim{
