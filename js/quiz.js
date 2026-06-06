@@ -1,3 +1,20 @@
+const content = document.getElementById("content");
+
+function updateClock() {
+
+    const now = new Date();
+
+    document.getElementById("clock").innerHTML =
+        now.toLocaleDateString("pt-BR") +
+        " " +
+        now.toLocaleTimeString("pt-BR");
+}
+
+setInterval(updateClock, 1000);
+
+updateClock();
+
+
 const questions = [
   {
     tag: "QUIZ COMUNICAÇÃO",
@@ -8,55 +25,55 @@ const questions = [
   {
     tag: "QUIZ TECNOLOGIA",
     text: "Na estrutura tecnológica do AstroLab, qual funcionalidade atua como os 'Olhos Digitais' para monitorar a integridade dos equipamentos e prever falhas?",
-    options: ["Reconhecimento de Voz", "Impressão 3D Inteligente", "Inteligência Artificial", "Visão Computacional"],
-    answer: 3,
-  },
-  {
-    tag: "QUIZ SOBREVIVÊNCIA",
-    text: "Qual é a temperatura média na superfície de Marte?",
-    options: ["-63°C", "0°C", "-120°C", "25°C"],
+    options: ["Visão Computacional", "Impressão 3D Inteligente", "Inteligência Artificial", "Reconhecimento de Voz"],
     answer: 0,
   },
   {
-    tag: "QUIZ FABRICAÇÃO",
-    text: "Qual tecnologia de impressão 3D é mais adequada para ambientes de microgravidade?",
-    options: ["FDM com extrusora padrão", "SLA com resina líquida", "FDM com contenção de filamento", "Impressão a jato de tinta"],
+    tag: "QUIZ OBJETIVO",
+    text: "Na seção 'Objetivos'. Quais são as duas metas numéricas e operacionais destacadas para o ecossistema das naves?",
+    options: ["Impressão Infinita e Peso Nula", "50% de Economia de Redução de Danos", "100% Local e Zero Latência", "40 Minutos de Resposta e Triagem Remota"],
     answer: 2,
   },
   {
-    tag: "QUIZ BIOLOGIA",
-    text: "Quanto tempo um astronauta pode ficar na ISS sem danos severos à saúde?",
-    options: ["3 meses", "6 meses", "12 meses", "24 meses"],
+    tag: "QUIZ PUBLICO ALVO",
+    text: "Qual dos seguintes locais NÃO é listado explicitamente na seção 'Público Alvo' (Projetado para ambientes extremos) do AstroLab?",
+    options: ["Colonização de Marte", "Oceanos Profundos", "Estações Espaciais", "Bases Lunares"],
     answer: 1,
   },
   {
-    tag: "QUIZ ÓRBITA",
-    text: "A que altitude orbita a Estação Espacial Internacional (ISS)?",
-    options: ["200 km", "408 km", "1.000 km", "36.000 km"],
+    tag: "QUIZ BENEFICIOS",
+    text: "A seção 'Benefícios' exibe quatro pilares fundamentais. Quais são eles?",
+    options: ["Segurança, Autonomia, Menos Erros e Menos Desperdício", "Sustentabilidade, Velocidade de Dobra, Oxigênio e Gravidade", "Velocidade, Lucro, Conforto e Comunicação", "Conexão, Inteligência, Baixo Custo, Expansão"],
+    answer: 0,
+  },
+  {
+    tag: "QUIZ NA PRÁTICA",
+    text: "No fluxo do 'AstroLab na Prática', o que acontece na Etapa 02",
+    options: ["Ajustar a temperatura do bico injetor da impressora 3D", "É solicitada uma confirmação final de segurança humana.", "O sistema identifica o design, verifica se há material disponível e compatível.", "O astronauta fotografa a peça danificada."],
+    answer: 2,
+  },
+  {
+    tag: "QUIZ APLICAÇÕES NA TERRA",
+    text: "O AstroLab também foi projetado para ambientes extremos na Terra. Quais são as quatro aplicações terrestres mencionadas?",
+    options: ["Cidades inteligentes, Fábricas automotivas, Fazendas e Escolas.", "Escritórios, Shoppings, Aeroportos e Metrôs.", "Submarinos, Desertos, Floresta Amazônica e Centros de Pesquisa Urbanos.Metano e oxigênio líquido", "Offshore, Antártida, Hospitais de campanha e Mineração.Hidrazina"],
+    answer: 3,
+  },
+  {
+    tag: "QUIZ PROBLEMA",
+    text: "Quais são os três principais cartões (cards) de desafios apresentados na seção do Problema?",
+    options: ["Radiação solar, Falha mecânica e Distância da Terra.", "Suporte Remoto Inviável, Estoque Limitado de Peças e Dependência de Especialistas.", "Falta de energia, Desperdício de água e Gravidade zero.", "Latência de rede, Fadiga dos astronautas e Erros de software."],
     answer: 1,
   },
   {
-    tag: "QUIZ PROPULSÃO",
-    text: "Qual é o combustível usado nos foguetes Falcon 9 da SpaceX?",
-    options: ["Hidrogênio líquido", "Querosene e oxigênio líquido", "Metano e oxigênio líquido", "Hidrazina"],
+    tag: "QUIZ NA PRATICA",
+    text: "De acordo com o passo 04 (Impressão Inteligente), o que o astronauta NÃO precisa fazer ou consultar para fabricar a peça?",
+    options: ["Não precisa de autorização do comandante.", "Não precisa consultar manuais, contatar a Terra ou ter conhecimento técnico de impressão 3D.", "Não precisa usar comandos de voz.", "Não precisa abastecer a máquina com filamento."],
     answer: 1,
   },
   {
-    tag: "QUIZ_GEOLOGIA",
-    text: "Qual é o maior vulcão do sistema solar?",
-    options: ["Vesúvio (Terra)", "Olympus Mons (Marte)", "Maxwell Montes (Vênus)", "Pico de Teide (Terra)"],
-    answer: 1,
-  },
-  {
-    tag: "QUIZ_FÍSICA",
-    text: "Qual fenômeno faz o tempo passar mais devagar em maior aceleração gravitacional?",
-    options: ["Efeito Doppler", "Dilatação temporal gravitacional", "Paradoxo dos gêmeos", "Efeito de lente gravitacional"],
-    answer: 1,
-  },
-  {
-    tag: "QUIZ MISSÃO",
-    text: "Em qual ano o humano pisou na Lua pela primeira vez?",
-    options: ["1965", "1967", "1969", "1972"],
+    tag: "QUIZ SOBRE NOS",
+    text: "Qual é o slogan oficial do projeto AstroLab presente no site?",
+    options: ["'Exploring the universe. Today and tomorrow.'", "'Autonomy in deep space exploration.'", "'Print the future. Wherever you are.'", "'The digital brain of space stations.'"],
     answer: 2,
   }
 ];
