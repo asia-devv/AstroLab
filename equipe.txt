@@ -2,7 +2,7 @@ Vinycius Shun Andrade Lu - Rm569300
 Matheus Yukio Tamataya - Rm572842
 Leonardo Daniel Da Silva Costa- Rm574142
 Bernado Suk Ju Kim- Rm568968
-Matheus da Costaa Novaes Teixeira - Rm573172
+Matheus da Costa Novaes Teixeira - Rm573172
 
 Link do Repositório:
 https://github.com/vinyciuslu/AstroLab

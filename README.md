@@ -1,4 +1,4 @@
-# 🚀 AstroLAb <!--  - Sistema de Monitoramento para Fabricação em missão Espacial -->
+# 🚀 AstroLab <!--  - Sistema de Monitoramento para Fabricação em missão Espacial -->
 
   "Print the future. Wherever you are."
 
