@@ -214,10 +214,11 @@ nav a:hover{
     flex-wrap:wrap;
     border-radius: 20px;
     border: solid 0.5px rgba(255, 166, 0, 0.267);
+    box-shadow: 0 0 10px rgba(255, 161, 99, 0.5);
     padding: 40px;
     background-color: #03060f;
 
-    box-shadow: 0 0 10px rgba(255, 161, 99, 0.5);
+    
 }
 
 #latencia{
@@ -963,82 +964,46 @@ nav a:hover{
     color: #00cbcc;
 }
 
-.container-grade {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.linha-grade {
-    display: flex;
-    gap: 20px;
-    height: 240px;
-}
-
-.cartao {
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-end;
-    padding: 25px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.cartao:hover {
-    transform: scale(1.02);
-}
-
-.cartao-off {
-    flex: 1.6;
-    background:  linear-gradient(
-            rgba(255, 255, 255, 0),
-            #000000e8
-            ),
-            url('../images/offshore.jpeg');
-    background-position: center;
-    background-size: cover;
-}
-
-.cartao-mine {
-    flex: 1.6;
-    background:  linear-gradient(
-            rgba(255, 255, 255, 0),
-            #000000e8
-            ),
-            url('../images/mineração.jpeg');
-    background-position: center;
-    background-size: cover;
-}
-
-.cartao-antar {
-    flex: 1;
-    background:  linear-gradient(
-            rgba(255, 255, 255, 0),
-            #000000e8
-            ),
-            url('../images/antartida.jpeg');
-    background-position: center;
-    background-size: cover;
-}
-
-.cartao-hospi {
-    flex: 1;
-    background:  linear-gradient(
-            rgba(255, 255, 255, 0),
-            #000000e8
-            ),
-            url('../images/hospital.jpeg');
-    background-position: center;
-    background-size: cover;
-}
-
-.cartao h3 {
-    z-index: 2;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+.slide-legenda {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 65, 82, 0.479);
+    color: #A8B3CC;
+    font-size: 13px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: white;
+    padding: 6px 16px;
+    border-radius: 99px;
+    border: none;
+    white-space: nowrap;
+    transition: opacity 0.4s ease;
+    min-width: 1000px;
+}
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 945px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slide-foto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.slide-foto.ativa {
+    opacity: 1;
 }
 
 /* -- Seção 9 -- */

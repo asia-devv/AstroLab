@@ -117,3 +117,35 @@ function limparErros() {
 function validarEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+let fotos = [
+    { src: "offshore.jpeg",    legenda: "Plataformas Offshore"   },
+    { src: "antartida.jpeg",   legenda: "Antártica"              },
+    { src: "hospital.jpeg",    legenda: "Hospitais de Campanha"  },
+    { src: "mineração.jpeg",   legenda: "Mineração Remota"       }
+];
+let x = 0;
+
+const fotoA   = document.getElementById("foto-a");
+const fotoB   = document.getElementById("foto-b");
+const legenda = document.getElementById("slide-legenda");
+let ativa   = fotoA;
+let proxima = fotoB;
+
+function slideshow() {
+    x = (x + 1) % fotos.length;
+
+    proxima.src = "./images/" + fotos[x].src;
+    ativa.classList.remove("ativa");
+    proxima.classList.add("ativa");
+
+    // Fade na legenda
+    legenda.style.opacity = 0;
+    setTimeout(() => {
+        legenda.textContent = fotos[x].legenda;
+        legenda.style.opacity = 1;
+    }, 400);
+
+    [ativa, proxima] = [proxima, ativa];
+}
+
+setInterval(slideshow, 5000);
