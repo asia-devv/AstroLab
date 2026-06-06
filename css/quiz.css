@@ -1,0 +1,182 @@
+html{ 
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin: 0;
+    display:flex;
+    background: var(--background-primary);
+    color:white;
+    /* font-family:Segoe UI; */
+    font-family: var(--text);
+}
+
+
+.sidebar{
+    width:260px;
+    height:100vh;
+
+    background:#08112100;
+    /* background-image: url(../images/fundo-galaxia.jpg); */
+    border-right:1px solid #263552;
+
+    position:fixed;
+}
+
+.main{
+    margin-left:260px;
+    flex:1;
+    width: calc(100% - 260px);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 64px;
+    box-sizing: border-box;
+}
+
+header{
+    height:64px;
+    background:#101a2ef7;
+    border-bottom:1px solid #263552;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    padding:0 24px;
+
+    position:fixed;
+    top:0;
+    left: 260px;
+    right: 0;
+
+    z-index:1000;
+}
+
+.logo{
+    padding:24px;
+}
+
+.logo-icon{
+    width:40px;
+    height:40px;
+
+    background:#4DA6FF;
+
+    color:#050B1A;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+
+nav a{
+    color:#A8B3CC;
+    text-decoration:none;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom: 10px;
+
+    transition: all ease 0.5s;
+}
+
+nav a:hover{
+    background:#18233B;
+    color:white;
+    transform: scale(1.05);
+}
+
+.status{
+    color:#35D07F;
+}
+
+
+
+.quiz-card{
+    width: 100%;
+    max-width: 1000px;
+    height: 350px;
+    margin: 0;
+
+    border-radius: 10px;
+    border:2px solid rgba(91, 35, 222, 0.263);
+    background:rgba(23, 27, 44, 0.358);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.quiz-card h1{
+    font-family: var(--title);
+    font-size:var(--title-size);
+    margin: 20px 0;
+}
+
+.quiz-card p{
+    font-size:20px;
+    line-height:1.8;
+    max-width:900px;
+    padding:20px;
+}
+
+/* a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: #0d1d41;
+    font-family: var(--title);
+    font-size: 21px;
+    background-color: #d6d6d6;
+    padding: 15px;
+    width: 500px;
+    transition: all ease 0.6s;
+    margin-top: 30px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+} */
+
+.quiz-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz{
+    display: none;
+    width: 90%;
+    max-width: 1000px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid rgba(91, 35, 222, 0.263);
+    background: rgba(23, 27, 44, 0.358);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz.ativo{
+    display: flex;
+}
+
