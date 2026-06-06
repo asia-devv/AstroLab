@@ -8,8 +8,8 @@ O AstroLab é um sistema de monitoramento para fabricação em missão espacial,
 
 ## Site
 
-[![Página AstroLab](https://vinyciuslu.github.io/AstroLab/)] <!-- O site entra nos parenteses -->
-👉 [https://vinyciuslu.github.io/AstroLab/](https://vinyciuslu.github.io/AstroLab/) <!-- O site entra nos parenteses -->
+👉[Página AstroLab](https://vinyciuslu.github.io/AstroLab/)
+[https://vinyciuslu.github.io/AstroLab/](https://vinyciuslu.github.io/AstroLab/)
 
 ---
 
