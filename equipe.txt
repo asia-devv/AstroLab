@@ -5,4 +5,4 @@ Bernado Suk Ju Kim- Rm568968
 Matheus da Costa Novaes Teixeira - Rm573172
 
 Link do Repositório:
-https://github.com/vinyciuslu/AstroLab
+https://github.com/asia-devv/AstroLab
