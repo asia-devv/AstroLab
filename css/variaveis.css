@@ -21,7 +21,8 @@
 
 html.light-tema {
     --background-primary: #6494c4d1;
-    --background-sidebar: ##6494c4d1;
+    --background-secondary: #48719bd1;
+    --background-sidebar: #6494c4;
     --background-header: #6494c4;
 
     --background-card: rgba(23, 27, 44, 0.651);
