@@ -5,6 +5,8 @@
     --background-primary: #030e25;
     --background-secondary: #051224;
     --background-sidebar: #08112100;
+    --background-header: #081121d1;
+
 
     --title: 'Play';
     --text: 'Exo';
@@ -23,7 +25,7 @@ html.light-tema {
     --background-primary: #6494c4d1;
     --background-secondary: #48719bd1;
     --background-sidebar: #6494c4;
-    --background-header: #6494c4;
+    --background-header: #6494c4ab;
 
     --background-card: rgba(23, 27, 44, 0.651);
 
@@ -42,6 +44,8 @@ html.galaxy-tema {
     --background-sidebar: #1a0f4700;
     --border-color: #5b23de;
     --text-color: #e0d7ff;
+    --background-header: #000000cf;
+
 
     --background-color: #283046b0;
 }
